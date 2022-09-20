@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表单</title>
+</head>
+<body>
+
+<form action="" method="get">
+    <label for="">邮箱账号：</label>
+    <input type="text" name="user">
+    <br>
+    <label for="">昵称：</label>
+    <input type="text" name="name">
+    <br>
+    <label for="">密码：</label>
+    <input type="password" name="pw1">
+    <br>
+    <label for="">确认密码：</label>
+    <input type="password" name="pw2">
+    <br>
+    <label for="">性别：</label>
+    <input type="radio" name="gender" value="男">男
+    <input type="radio" name="gender" value="女">女
+    <br>
+
+    <label for="">爱好：</label>
+    <input type="checkbox" name="hobby" value="watchTv">看电视
+    <input type="checkbox" name="hobby" value="coder">敲代码
+    <input type="checkbox" name="hobby" value="shopping">逛街
+    <input type="checkbox" name="hobby" value="game">打游戏
+    <input type="checkbox" name="hobby" value="sleep">睡觉
+    <br>
+<!--    下拉框-->
+    <label for="">生日：</label>
+    <select name="year" id="y">
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+    </select>年
+        <select name="month" id="m">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>月
+        <select name="day" id="d">
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+    </select>日
+    <br>
+
+<!--    大文本输入框-->
+    <label for="">详细地址：</label>
+    <textarea name="address" id="" cols="30" rows="10"></textarea>
+    <br>
+
+<!--    隐藏表单-->
+    <input type="hidden" name="token" value="GHJG&*YFG435HGFT">
+    <br>
+
+    <input type="submit" value="提交">
+    <br>
+</form>
+
+
+</body>
+</html>
