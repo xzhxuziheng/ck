@@ -82,7 +82,7 @@ body{
 
 /*主体内容部分样式*/
 .content{
-    width: 1480px;
+    width: 1450px;
     height: 800px;
     position: absolute;
     left: 320px;
@@ -95,7 +95,7 @@ body{
     width: 240px;
     height: 200px;
     border: solid 1px #808080;
-    margin-right: 250px;
+    margin-right: 200px;
     margin-top: 40px;
     float: left;
     border-radius: 10px;
