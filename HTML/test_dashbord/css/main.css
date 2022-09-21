@@ -1,0 +1,137 @@
+body{
+    background: #FFEFD5;
+}
+
+
+.top_menu{
+    height: 100px;
+    /*background: blue;*/
+    /*background: rgb(255,122,111);*/
+    /*rgb(255,122,111,0.5) 最后个参数设置背景透明度*/
+    background: #5599FF;
+}
+/*类选择器*/
+.title{
+    width: 350px;
+    color: #ffffff;
+    font: normal 32px/100px 微软雅黑;
+    text-align: center;
+    float: left;
+}
+
+.menu_list{
+    /*width: 1554px;*/
+    height: 100px;
+    float: left;
+}
+.menu_list ul{
+    margin: 0;
+}
+/*层级选择器*/
+.menu_list li{
+    float: left;
+    width: 240px;
+    height: 100px;
+    font: normal 24px/100px 微软雅黑;
+    color: #ffffff;
+    /*background: #99BBFF;*/
+    text-align: center;
+    /*line-height: 100px;*/
+    list-style: none;
+}
+.menu_list li:hover{
+    background: #99BBFF;
+}
+.top_user{
+    float: right;
+    font: normal 16px/40px 微软雅黑;
+    margin: 45px 40px;
+}
+
+/*左侧菜单栏样式*/
+.left_menu{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background: #FFEFD5;
+    width: 300px;
+    height: 800px;
+}
+
+.left_title{
+    height: 100px;
+    width: 300px;
+    float: left;
+    font: normal 28px/100px 微软雅黑;
+    color: #ffffff;
+    background: #5599FF;
+    text-indent: 65px;
+}
+
+.left_menu_list li{
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px antiquewhite;
+    font: normal 22px/60px 微软雅黑;
+    text-indent: 65px;
+    float: left;
+    color: #000000;
+    background-image: url("../image/xialajiantou.png");
+}
+
+
+/*主体内容部分样式*/
+.content{
+    width: 1480px;
+    height: 800px;
+    position: absolute;
+    left: 320px;
+    top: 120px;
+    background: #FFEFD5;
+    padding-left: 150px;
+}
+
+.pro_info{
+    width: 240px;
+    height: 200px;
+    border: solid 1px #808080;
+    margin-right: 250px;
+    margin-top: 40px;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pro_title{
+    width: 100%;
+    height: 50px;
+    font: normal 28px/50px 微软雅黑;
+    background: #CCDDFF;
+    color: #000000;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pro_info p{
+    font: normal 18px/50px 微软雅黑;
+    color: rgba(0,0,0,0.61);
+}
+
+.pro_info a{
+    font: normal 20px/50px 微软雅黑;
+    color: #ffffff;
+    background: #5599FF;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-block: 2px;
+}
+
+
+/*id选择器*/
+/*#test{*/
+/*    height: 100px;*/
+/*    background: aqua;*/
+/*}*/
