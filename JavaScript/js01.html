@@ -5,7 +5,7 @@
     <title>js部分</title>
 
     <style type="text/css">
-        #btn{
+        #btn {
             width: 80px;
             height: 30px;
             background: #99BBFF;
@@ -13,37 +13,79 @@
 
     </style>
 
-    <script type="text/javascript">
-        alert(99999999999)
-    </script>
-
+    <!--    <script type="text/javascript">-->
+    <!--        alert(99999999999)-->
+    <!--    </script>-->
+    <!--    代码从上往下执行，页面元素还未加载出来，因此找不到style属性-->
     <script type="text/javascript" src="js01.js"></script>
+    <script type="text/javascript">
+        // 等待页面元素加载完成后再执行
+        window.onload = function () {
+            var box2 = document.getElementById('box2');
+            box2.style.width = '100px';
+            box2.style.height = '50px';
+            box2.style.background = 'cyan';
 
+            // 返回的是选择集
+            var btn2 = document.getElementsByClassName('btn2')[0];
+            btn2.style.background = 'red';
+
+            var btn1 = document.getElementsByTagName('li');
+                for (var i=0; i<btn1.length; i++) {
+                    console.log(i+1000);
+                    if (i%2 === 0) {
+                        btn1[i].style.background = 'yellow';
+                    } else {
+                        btn1[i].style.background = 'cyan';
+                    }
+                }
+        }
+        // var box2 = document.getElementById('box2');
+        // box2.style.width='100px';
+        // box2.style.height='50px';
+        // box2.style.background='cyan';
+    </script>
 
 
 </head>
 <body>
 
-    <script type="text/javascript">
-    alert(666666)
+<!--    <script type="text/javascript">-->
+<!--    alert(666666)-->
+<!--    </script>-->
 
 
+<!--    <div id="btn" onclick="alert('这个是点击了div1')">div1</div>-->
 
-    </script>
+<!--    <script>-->
+<!--        document.getElementById('btn').style.background = 'red'-->
+<!--    </script>-->
+
+<div id="dv1">
+    <div id="box1">box1</div>
+
+    <div id="box2">box2</div>
+    <div class="btn1">
+        <ul>
+            <li>一</li>
+            <li>二</li>
+            <li>三</li>
+            <li>四</li>
+            <li>五</li>
+        </ul>
+    </div>
+
+    <div class="btn2">box3</div>
+</div>
 
 
-
-    <div id="btn" onclick="alert('这个是点击了div1')">div1</div>
-
-    <script>
-        document.getElementById('btn').style.background = 'red'
-    </script>
-
-
-
-
-
-
+<!--<script type="text/javascript" src="js01.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    var box2 = document.getElementById('box2');-->
+<!--    box2.style.width='100px';-->
+<!--    box2.style.height='50px';-->
+<!--    box2.style.background='cyan';-->
+<!--</script>-->
 
 
 </body>

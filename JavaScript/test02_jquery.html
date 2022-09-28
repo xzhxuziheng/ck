@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性和元素操作</title>
+
+    <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+
+        $(function (){
+            // 读取元素属性
+            var href = $('.div1 a').eq(0).attr('href');
+            // console.log(href);
+            // 写入属性
+            $('a').attr('href', href);
+
+        })
+
+
+    </script>
+
+</head>
+<body>
+
+<div class="div1">
+    <span>你好python</span>
+    <ul>
+        <li><a href="http://www.baidu.com">测试1</a></li>
+        <li><a href="">测试2</a></li>
+        <li><a href="">测试3</a></li>
+        <li><a href="">测试4</a></li>
+        <li><a href="">测试5</a></li>
+    </ul>
+
+</div>
+
+
+
+</body>
+</html>

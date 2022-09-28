@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery学习</title>
+    <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+        $(function (){
+            // $('#box1').css({width:'300px', height:'200px', background:'red'})
+            // $('.btn1').css({width:'300px', height:'200px', background:'pink'})
+            // // 标签选择器，选择集可以直接设置样式
+            // $('li').css({background:'yellow', fontSize: '16px'})
+
+            // var li3 = $('#li3').css({background: 'pink'});
+            // // // prev():选择往上的兄弟节点
+            // // li3.prev().css({background: 'red'});
+            // li3.prevAll().css({background: 'red'});
+            // li3.nextAll().css({background: 'red'});
+            // li3.siblings().css({background: 'cyan'});
+
+            $('li').css({background: '#00f00f'})
+                .parent().css({background: '#0fd0fd'})
+                .parent().css({background: '#df0df0'})
+                .parent().css({background: '#000ddd'})
+                .parent().css({background: '#00f0ff'})
+        })
+
+
+    </script>
+
+</head>
+<body>
+
+
+
+<div id="dv1">
+    <div id="box1">box1</div>
+
+    <div id="box2">box2</div>
+    <div class="btn1">
+        <ul>
+            <li id="li1">一</li>
+            <li id="li2">二</li>
+            <li id="li3">三</li>
+            <li id="li4">四</li>
+            <li id="li5">五</li>
+        </ul>
+    </div>
+
+    <div class="btn2">box3</div>
+</div>
+
+
+
+
+</body>
+</html>
