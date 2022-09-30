@@ -9,10 +9,31 @@
 
         $(function (){
             // 读取元素属性
-            var href = $('.div1 a').eq(0).attr('href');
+            // var href = $('.div1 a').eq(0).attr('href');
             // console.log(href);
             // 写入属性
-            $('a').attr('href', href);
+            // $('a').attr('href', href);
+            // $('a').removeAttr('href');
+
+
+            // 获取元素中的文本
+            // console.log($('.div1').text());
+
+            // 获取元素内容
+            // console.log($('.div1').html());
+
+            // 获取元素的value值（表单）: val()
+            $('#btn').click(function (){
+                var user = $('#user').val();
+                var pwd = $('#pwd').val();
+                if (user.length<6){
+                    alert('输入的账号小于6位');
+                }else {
+                    alert(user)
+                }
+
+            })
+
 
         })
 
@@ -23,14 +44,25 @@
 <body>
 
 <div class="div1">
-    <span>你好python</span>
-    <ul>
-        <li><a href="http://www.baidu.com">测试1</a></li>
-        <li><a href="">测试2</a></li>
-        <li><a href="">测试3</a></li>
-        <li><a href="">测试4</a></li>
-        <li><a href="">测试5</a></li>
-    </ul>
+<!--    <span>你好python</span>-->
+<!--    <ul>-->
+<!--        <li><a href="http://www.baidu.com">测试1</a></li>-->
+<!--        <li><a href="">测试2</a></li>-->
+<!--        <li><a href="">测试3</a></li>-->
+<!--        <li><a href="">测试4</a></li>-->
+<!--        <li><a href="">测试5</a></li>-->
+<!--    </ul>-->
+
+    <form action="">
+        账号：<input type="text" id="user" name="user">
+        <br>
+        密码：<input type="password" id="pwd" name="pwd">
+        <br>
+        <input type="button" id="btn" value="点击提交">
+
+
+    </form>
+
 
 </div>
 
