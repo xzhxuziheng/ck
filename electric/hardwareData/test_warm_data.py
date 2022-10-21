@@ -74,7 +74,7 @@ class TestHardwareDta:
         }
         url = 'https://batterytest.ledear.cn/smart-radio-web/ark/data'
         res = requests.post(url=url, json=re_data)
-        print(res.json())
+        print(res.json(), mark)
 
 
 if __name__ == '__main__':
